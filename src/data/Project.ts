@@ -14,6 +14,10 @@ export interface Project {
 
 export const projects: Project[] = [
 
+    // =========================================================
+    // 1. DENTAL CLINIC
+    // =========================================================
+
     {
         id: 1,
 
@@ -57,6 +61,11 @@ export const projects: Project[] = [
         ]
     },
 
+
+    // =========================================================
+    // 2. FOODFUSION
+    // =========================================================
+
     {
         id: 2,
 
@@ -68,7 +77,7 @@ export const projects: Project[] = [
             "Modern restaurant management platform with React frontend and ASP.NET Core Web API backend.",
 
         details:
-            "A full-stack restaurant platform featuring menu management, categories, cart, orders, reviews, authentication and a responsive React interface.",
+            "A full-stack restaurant platform featuring menu management, categories, shopping cart, orders, reviews, authentication and a responsive React interface.",
 
         image: "/projects/foodfusion.jpg",
 
@@ -98,6 +107,11 @@ export const projects: Project[] = [
             "Responsive React UI"
         ]
     },
+
+
+    // =========================================================
+    // 3. BLOG NEWS PORTAL
+    // =========================================================
 
     {
         id: 3,
@@ -140,6 +154,11 @@ export const projects: Project[] = [
         ]
     },
 
+
+    // =========================================================
+    // 4. SCHOOL MANAGEMENT
+    // =========================================================
+
     {
         id: 4,
 
@@ -165,7 +184,7 @@ export const projects: Project[] = [
             "C#",
             "Entity Framework Core",
             "SQL Server",
-            "Identity",
+            "ASP.NET Identity",
             "Bootstrap"
         ],
 
@@ -177,6 +196,55 @@ export const projects: Project[] = [
             "Result management",
             "Role-based authorization",
             "Database relationships"
+        ]
+    },
+
+
+    // =========================================================
+    // 5. MINI AMAZON
+    // =========================================================
+
+    {
+        id: 5,
+
+        title: "Mini Amazon E-Commerce",
+
+        category: "ASP.NET Core MVC",
+
+        description:
+            "A full-stack e-commerce platform inspired by modern online shopping systems, built with ASP.NET Core MVC.",
+
+        details:
+            "A practical e-commerce application featuring product catalog management, categories, shopping cart, checkout flow, order history and secure authentication using ASP.NET Identity. The project demonstrates real-world MVC architecture, Entity Framework Core relationships and SQL Server database integration.",
+
+        image: "/projects/mini-amazon.jpg",
+
+        video: "/projects/videos/mini-amazon.mp4",
+
+        github:
+            "https://github.com/yourusername/mini-amazon",
+
+        technologies: [
+            "ASP.NET Core MVC",
+            "C#",
+            "Entity Framework Core",
+            "SQL Server",
+            "ASP.NET Identity",
+            "Bootstrap"
+        ],
+
+        features: [
+            "User registration and login",
+            "Product catalog",
+            "Product categories",
+            "Product management",
+            "Shopping cart",
+            "Checkout system",
+            "Order history",
+            "ASP.NET Identity",
+            "Entity Framework Core",
+            "SQL Server database",
+            "Responsive UI"
         ]
     }
 
