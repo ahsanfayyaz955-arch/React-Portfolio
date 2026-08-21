@@ -1,0 +1,189 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+    padding: 18px 0;
+
+    background: rgba(2, 2, 8, 0.55);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(18px);
+}
+
+.nav-container {
+    width: min(1180px, 92%);
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    color: white;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    letter-spacing: -2px;
+}
+
+.nav-logo span {
+    color: #a855f7;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #a1a1aa;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: #a855f7;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-socials {
+    display: flex;
+
+    gap: 10px;
+}
+
+.nav-socials a,
+.mobile-socials a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #a1a1aa;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s;
+}
+
+.nav-socials a:hover,
+.mobile-socials a:hover {
+    color: white;
+
+    border-color: #a855f7;
+
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.3);
+}
+
+.menu-button {
+    display: none;
+
+    background: transparent;
+
+    border: 0;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.mobile-socials {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .nav-socials {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 75px;
+        left: 4%;
+
+        width: 92%;
+
+        padding: 25px;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 24px;
+
+        border: 1px solid rgba(255,255,255,0.08);
+
+        border-radius: 20px;
+
+        background: rgba(8, 5, 18, 0.95);
+
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-links.nav-open {
+        display: flex;
+    }
+
+    .mobile-socials {
+        display: flex;
+
+        gap: 10px;
+
+        margin-top: 5px;
+    }
+}

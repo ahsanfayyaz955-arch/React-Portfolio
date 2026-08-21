@@ -1,0 +1,402 @@
+.contact {
+    background: #020207;
+}
+
+
+/* =========================================================
+   CONTACT BOX
+========================================================= */
+
+.contact-box {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    padding: 60px;
+
+    border: 1px solid rgba(168, 85, 247, 0.15);
+
+    border-radius: 28px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(168, 85, 247, 0.1),
+            transparent 40%
+        ),
+        rgba(255, 255, 255, 0.025);
+
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(20px);
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.contact-label {
+    display: inline-block;
+
+    color: #a855f7;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.contact-content h2 {
+    margin: 15px 0;
+
+    color: white;
+
+    font-size: clamp(
+        2.3rem,
+        5vw,
+        4rem
+    );
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.contact-content h2 strong {
+    color: #a855f7;
+}
+
+
+.contact-content > p {
+    max-width: 500px;
+
+    margin-top: 20px;
+
+    color: #71717a;
+
+    line-height: 1.8;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   CONTACT INFO
+========================================================= */
+
+.contact-info {
+    display: grid;
+
+    gap: 14px;
+
+    margin-top: 32px;
+}
+
+
+.contact-info a,
+.contact-info div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    color: #a1a1aa;
+
+    font-size: 0.85rem;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.contact-info a:hover {
+    color: white;
+
+    transform: translateX(4px);
+}
+
+
+.contact-info svg {
+    flex-shrink: 0;
+
+    color: #a855f7;
+}
+
+
+/* =========================================================
+   SOCIALS
+========================================================= */
+
+.contact-socials {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+
+.contact-socials a {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #a1a1aa;
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.contact-socials a:hover {
+    color: white;
+
+    border-color: #a855f7;
+
+    background: rgba(
+        168,
+        85,
+        247,
+        0.08
+    );
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(
+            168,
+            85,
+            247,
+            0.2
+        );
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    color: white;
+
+    font: inherit;
+
+    font-size: 0.9rem;
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.035
+    );
+
+    resize: vertical;
+
+    transition: 0.3s;
+}
+
+
+.contact-form textarea {
+    min-height: 145px;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgba(
+        168,
+        85,
+        247,
+        0.6
+    );
+
+    background: rgba(
+        168,
+        85,
+        247,
+        0.025
+    );
+
+    box-shadow:
+        0 0 25px rgba(
+            168,
+            85,
+            247,
+            0.08
+        );
+}
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #52525b;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.contact-form button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 14px;
+
+    color: white;
+
+    border: 0;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #6366f1
+        );
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 30px rgba(
+            147,
+            51,
+            234,
+            0.35
+        );
+}
+
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.contact-note {
+    display: block;
+
+    color: #52525b;
+
+    font-size: 0.68rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .contact-box {
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+
+        gap: 40px;
+    }
+
+
+    .contact-content h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .contact-info a span,
+    .contact-info div span {
+        word-break: break-word;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .contact-box {
+        padding: 22px;
+
+        border-radius: 20px;
+    }
+
+
+    .contact-content h2 {
+        font-size: 2.1rem;
+
+        letter-spacing: -1px;
+    }
+}
