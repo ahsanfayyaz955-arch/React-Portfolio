@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown, Sparkles, FileText } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import SpaceScene from "../3d/SpaceScene";
@@ -126,6 +126,17 @@ export default function Hero() {
                             Let's Talk
                         </a>
 
+                        {/* CV / RESUME BUTTON */}
+                        <a
+                            href="/resume.pdf.docx" /* Aap apni public folder ki PDF ka path ya Google Drive view link yahan de sakte hain */
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cv-btn secondary-btn"
+                        >
+                            <FileText size={18} />
+                            <span>View CV</span>
+                        </a>
+
                     </div>
 
 
@@ -185,22 +196,14 @@ export default function Hero() {
                     <div className="profile-glow" />
 
 
-                    {/* =================================================
-                        ORBITS
-
-                        IMPORTANT:
-                        Animation CSS se ho rahi hai.
-                        Framer Motion rotate intentionally remove kiya.
-                    ================================================= */}
+                    {/* ORBITS */}
 
                     <div className="profile-orbit orbit-one" />
 
                     <div className="profile-orbit orbit-two" />
 
 
-                    {/* =================================================
-                        PROFILE
-                    ================================================= */}
+                    {/* PROFILE */}
 
                     <motion.div
                         className="profile-wrapper"
@@ -231,9 +234,7 @@ export default function Hero() {
                     </motion.div>
 
 
-                    {/* =================================================
-                        TOP FLOATING CARD
-                    ================================================= */}
+                    {/* TOP FLOATING CARD */}
 
                     <motion.div
                         className="floating-card floating-card-top"
@@ -256,9 +257,7 @@ export default function Hero() {
                     </motion.div>
 
 
-                    {/* =================================================
-                        BOTTOM FLOATING CARD
-                    ================================================= */}
+                    {/* BOTTOM FLOATING CARD */}
 
                     <motion.div
                         className="floating-card floating-card-bottom"

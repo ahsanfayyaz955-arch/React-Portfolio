@@ -8,6 +8,7 @@ import {
     MapPin,
     Send,
     CheckCircle2,
+    Phone,
 } from "lucide-react";
 
 import {
@@ -149,6 +150,14 @@ Sent from Ahsan Portfolio`
 
                             </a>
 
+                            <a href="tel:03209257609">
+                                <Phone size={18} />
+
+                                <span>
+                                    03209257609
+                                </span>
+                            </a>
+
 
                             <div>
 
@@ -160,6 +169,7 @@ Sent from Ahsan Portfolio`
 
                             </div>
 
+       
                         </div>
 
 
