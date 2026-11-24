@@ -1,19 +1,16 @@
+
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles, FileText } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import SpaceScene from "../3d/SpaceScene";
-
 import "./Hero.css";
 
 export default function Hero() {
     return (
         <section id="home" className="hero">
 
-            {/* =====================================================
-                3D BACKGROUND
-            ===================================================== */}
-
+            {/* 3D BACKGROUND */}
             <div className="hero-space">
                 <SpaceScene />
             </div>
@@ -23,82 +20,49 @@ export default function Hero() {
             <div className="hero-glow hero-glow-one" />
             <div className="hero-glow hero-glow-two" />
 
-
-            {/* =====================================================
-                MAIN CONTAINER
-            ===================================================== */}
-
+            {/* MAIN CONTAINER */}
             <div className="hero-container">
 
-
-                {/* =================================================
-                    LEFT CONTENT
-                ================================================= */}
-
+                {/* LEFT CONTENT */}
                 <motion.div
                     className="hero-content"
-                    initial={{
-                        opacity: 0,
-                        x: -60
-                    }}
-                    animate={{
-                        opacity: 1,
-                        x: 0
-                    }}
+                    initial={{ opacity: 0, x: -60 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{
                         duration: 0.9,
                         ease: "easeOut"
                     }}
                 >
-
                     {/* BADGE */}
-
                     <motion.div
                         className="hero-badge"
-                        initial={{
-                            opacity: 0,
-                            y: 15
-                        }}
-                        animate={{
-                            opacity: 1,
-                            y: 0
-                        }}
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{
                             delay: 0.2,
                             duration: 0.6
                         }}
                     >
                         <Sparkles size={14} />
-
-                        <span>
-                            AVAILABLE FOR OPPORTUNITIES
-                        </span>
+                        <span>AVAILABLE FOR OPPORTUNITIES</span>
                     </motion.div>
 
-
                     {/* GREETING */}
-
                     <p className="hero-greeting">
                         HELLO, I'M
                     </p>
 
-
                     {/* NAME */}
-
                     <h1>
                         Ahsan<span>.</span>
                     </h1>
 
-
                     {/* ROLE */}
-
                     <h2>
                         ASP.NET Core Developer
                     </h2>
 
-
                     {/* DESCRIPTION */}
-
                     <p className="hero-description">
                         I build modern, scalable and high-performance
                         web applications using{" "}
@@ -107,28 +71,18 @@ export default function Hero() {
                         </strong>
                     </p>
 
-
                     {/* BUTTONS */}
-
                     <div className="hero-buttons">
-
-                        <a
-                            href="#projects"
-                            className="primary-btn"
-                        >
+                        <a href="#projects" className="primary-btn">
                             Explore My Work
                         </a>
 
-                        <a
-                            href="#contact"
-                            className="secondary-btn"
-                        >
+                        <a href="#contact" className="secondary-btn">
                             Let's Talk
                         </a>
 
-                        {/* CV / RESUME BUTTON */}
                         <a
-                            href="/resume.pdf.docx" /* Aap apni public folder ki PDF ka path ya Google Drive view link yahan de sakte hain */
+                            href="/resume.pdf.docx"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cv-btn secondary-btn"
@@ -136,14 +90,10 @@ export default function Hero() {
                             <FileText size={18} />
                             <span>View CV</span>
                         </a>
-
                     </div>
 
-
                     {/* SOCIALS */}
-
                     <div className="hero-socials">
-
                         <a
                             href="https://github.com/"
                             target="_blank"
@@ -153,7 +103,6 @@ export default function Hero() {
                             <FaGithub size={20} />
                         </a>
 
-
                         <a
                             href="https://www.linkedin.com/"
                             target="_blank"
@@ -162,150 +111,131 @@ export default function Hero() {
                         >
                             <FaLinkedin size={20} />
                         </a>
-
                     </div>
-
                 </motion.div>
 
-
-                {/* =================================================
-                    RIGHT PROFILE VISUAL
-                ================================================= */}
-
-                <motion.div
-                    className="hero-visual"
-                    initial={{
-                        opacity: 0,
-                        x: 80,
-                        scale: 0.85
-                    }}
-                    animate={{
-                        opacity: 1,
-                        x: 0,
-                        scale: 1
-                    }}
-                    transition={{
-                        duration: 1.1,
-                        delay: 0.15,
-                        ease: "easeOut"
-                    }}
-                >
+                {/* RIGHT PROFILE VISUAL */}
+                <div className="hero-visual">
 
                     {/* PROFILE GLOW */}
-
                     <div className="profile-glow" />
 
-
                     {/* ORBITS */}
-
                     <div className="profile-orbit orbit-one" />
-
                     <div className="profile-orbit orbit-two" />
 
-
-                    {/* PROFILE */}
-
+                    {/* PROFILE FRAME */}
                     <motion.div
                         className="profile-wrapper"
-                        animate={{
-                            y: [0, -10, 0]
-                        }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         transition={{
-                            duration: 4,
-                            repeat: Infinity,
-                            ease: "easeInOut"
+                            duration: 0.8,
+                            delay: 0.2
                         }}
                     >
+                        <motion.div
+                            className="profile-float"
+                            animate={{ y: [0, -9, 0] }}
+                            transition={{
+                                duration: 4,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                        >
+                            <div className="profile-frame">
 
-                        <div className="profile-ring">
+                                {/* IMAGE CLIPPING AREA */}
+                                <div className="profile-inner">
 
-                            <div className="profile-inner">
+                                    {/* IMAGE SLIDES UP INSIDE THE FRAME */}
+                                    <motion.img
+                                        src="/Profile.png"
+                                        alt="Ahsan - ASP.NET Core Developer"
+                                        className="profile-image"
+                                        initial={{
+                                            y: "105%",
+                                            opacity: 0,
+                                            scale: 1.07,
+                                            rotate: -5
+                                        }}
+                                        animate={{
+                                            y: "0%",
+                                            opacity: 1,
+                                            scale: 1.07,
+                                            rotate: -5
+                                        }}
+                                        transition={{
+                                            y: {
+                                                duration: 1.5,
+                                                delay: 0.45,
+                                                ease: [0.22, 1, 0.36, 1]
+                                            },
+                                            opacity: {
+                                                duration: 0.8,
+                                                delay: 0.55
+                                            },
+                                            scale: {
+                                                duration: 1.5,
+                                                delay: 0.45,
+                                                ease: [0.22, 1, 0.36, 1]
+                                            },
+                                            rotate: {
+                                                duration: 1.5,
+                                                delay: 0.45,
+                                                ease: [0.22, 1, 0.36, 1]
+                                            }
+                                        }}
+                                    />
 
-                                <img
-                                    src="/Profile.png"
-                                    alt="Ahsan"
-                                    className="profile-image"
-                                />
-
+                                </div>
                             </div>
-
-                        </div>
-
+                        </motion.div>
                     </motion.div>
 
-
                     {/* TOP FLOATING CARD */}
-
                     <motion.div
                         className="floating-card floating-card-top"
-                        animate={{
-                            y: [0, -8, 0]
-                        }}
+                        animate={{ y: [0, -8, 0] }}
                         transition={{
                             duration: 3,
                             repeat: Infinity,
                             ease: "easeInOut"
                         }}
                     >
-
                         <span className="floating-dot" />
-
-                        <span>
-                            .NET
-                        </span>
-
+                        <span>.NET</span>
                     </motion.div>
 
-
                     {/* BOTTOM FLOATING CARD */}
-
                     <motion.div
                         className="floating-card floating-card-bottom"
-                        animate={{
-                            y: [0, 8, 0]
-                        }}
+                        animate={{ y: [0, 8, 0] }}
                         transition={{
                             duration: 3.5,
                             repeat: Infinity,
                             ease: "easeInOut"
                         }}
                     >
-
-                        <span>
-                            React
-                        </span>
-
+                        <span>React</span>
                         <span className="floating-dot cyan" />
-
                     </motion.div>
 
-                </motion.div>
-
+                </div>
             </div>
 
-
-            {/* =====================================================
-                SCROLL
-            ===================================================== */}
-
+            {/* SCROLL INDICATOR */}
             <motion.a
                 href="#about"
                 className="scroll-indicator"
-                animate={{
-                    y: [0, 8, 0]
-                }}
+                animate={{ y: [0, 8, 0] }}
                 transition={{
                     duration: 1.5,
                     repeat: Infinity
                 }}
             >
-
-                <span>
-                    SCROLL TO EXPLORE
-                </span>
-
+                <span>SCROLL TO EXPLORE</span>
                 <ArrowDown size={17} />
-
             </motion.a>
 
         </section>

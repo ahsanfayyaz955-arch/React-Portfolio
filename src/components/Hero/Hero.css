@@ -1,3 +1,4 @@
+
 /* =========================================================
    GLOBAL HERO SAFETY
 ========================================================= */
@@ -9,17 +10,14 @@
     box-sizing: border-box;
 }
 
-
 /* =========================================================
    HERO
 ========================================================= */
 
 .hero {
     position: relative;
-
     width: 100%;
     min-height: 100vh;
-
     overflow: hidden;
 
     display: flex;
@@ -41,7 +39,6 @@
     color: #ffffff;
 }
 
-
 /* =========================================================
    3D SPACE
 ========================================================= */
@@ -49,17 +46,12 @@
 .hero-space {
     position: absolute;
     inset: 0;
-
     z-index: 0;
-
     width: 100%;
     height: 100%;
-
     overflow: hidden;
-
     pointer-events: none;
 }
-
 
 /* =========================================================
    OVERLAY
@@ -68,9 +60,7 @@
 .hero-overlay {
     position: absolute;
     inset: 0;
-
     z-index: 1;
-
     pointer-events: none;
 
     background:
@@ -84,43 +74,33 @@
         );
 }
 
-
 /* =========================================================
    BACKGROUND GLOWS
 ========================================================= */
 
 .hero-glow {
     position: absolute;
-
     z-index: 1;
-
     border-radius: 50%;
-
     pointer-events: none;
-
     filter: blur(100px);
 }
 
 .hero-glow-one {
     width: 430px;
     height: 430px;
-
     right: 3%;
     top: 15%;
-
     background: rgba(124, 58, 237, 0.15);
 }
 
 .hero-glow-two {
     width: 300px;
     height: 300px;
-
     left: 5%;
     bottom: 5%;
-
     background: rgba(6, 182, 212, 0.06);
 }
-
 
 /* =========================================================
    MAIN CONTAINER
@@ -128,28 +108,21 @@
 
 .hero-container {
     position: relative;
-
     z-index: 5;
 
     width: min(1280px, 92%);
-
     min-height: 100vh;
-
     margin: 0 auto;
-
     padding: 85px 0 70px;
 
     display: grid;
-
     grid-template-columns:
         minmax(0, 1.05fr)
         minmax(460px, 0.95fr);
 
     align-items: center;
-
     gap: 25px;
 }
-
 
 /* =========================================================
    LEFT CONTENT
@@ -157,14 +130,10 @@
 
 .hero-content {
     width: 100%;
-
     max-width: 690px;
-
     position: relative;
-
     z-index: 10;
 }
-
 
 /* =========================================================
    BADGE
@@ -174,34 +143,24 @@
     width: fit-content;
 
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
 
     padding: 9px 14px;
-
     margin-bottom: 24px;
 
     border: 1px solid rgba(139, 92, 246, 0.30);
-
     border-radius: 999px;
 
     background: rgba(124, 58, 237, 0.08);
-
     backdrop-filter: blur(14px);
 
     color: #c4b5fd;
-
     font-size: 11px;
-
     font-weight: 700;
-
     letter-spacing: 1.5px;
-
     white-space: nowrap;
 }
-
 
 /* =========================================================
    GREETING
@@ -209,16 +168,11 @@
 
 .hero-greeting {
     margin: 0 0 10px;
-
     color: #94a3b8;
-
     font-size: 14px;
-
     font-weight: 700;
-
     letter-spacing: 5px;
 }
-
 
 /* =========================================================
    NAME
@@ -226,28 +180,20 @@
 
 .hero h1 {
     margin: 0;
-
     color: #f8fafc;
 
     font-size: clamp(72px, 8.5vw, 120px);
-
     line-height: 0.88;
-
     font-weight: 900;
-
     letter-spacing: -7px;
 
-    text-shadow:
-        0 0 50px rgba(139, 92, 246, 0.18);
+    text-shadow: 0 0 50px rgba(139, 92, 246, 0.18);
 }
 
 .hero h1 span {
     color: #8b5cf6;
-
-    text-shadow:
-        0 0 35px rgba(139, 92, 246, 0.5);
+    text-shadow: 0 0 35px rgba(139, 92, 246, 0.5);
 }
-
 
 /* =========================================================
    ROLE
@@ -255,16 +201,12 @@
 
 .hero h2 {
     margin: 25px 0 0;
-
     color: #c4b5fd;
 
     font-size: clamp(24px, 3vw, 36px);
-
     line-height: 1.2;
-
     font-weight: 600;
 }
-
 
 /* =========================================================
    DESCRIPTION
@@ -272,22 +214,17 @@
 
 .hero-description {
     max-width: 620px;
-
     margin: 20px 0 0;
 
     color: #9ca3af;
-
     font-size: 17px;
-
     line-height: 1.8;
 }
 
 .hero-description strong {
     color: #e2e8f0;
-
     font-weight: 600;
 }
-
 
 /* =========================================================
    BUTTONS
@@ -295,13 +232,9 @@
 
 .hero-buttons {
     display: flex;
-
     align-items: center;
-
     gap: 14px;
-
     flex-wrap: wrap;
-
     margin-top: 30px;
 }
 
@@ -314,17 +247,13 @@
     min-height: 50px;
 
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
 
     padding: 0 24px;
-
     border-radius: 10px;
 
     font-size: 14px;
-
     font-weight: 700;
 
     transition:
@@ -337,24 +266,19 @@
 .primary-btn {
     color: #ffffff;
 
-    background:
-        linear-gradient(
-            135deg,
-            #7c3aed,
-            #4f46e5
-        );
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #4f46e5
+    );
 
-    box-shadow:
-        0 12px 35px rgba(124, 58, 237, 0.30);
+    box-shadow: 0 12px 35px rgba(124, 58, 237, 0.30);
 }
 
 .secondary-btn {
     color: #e2e8f0;
-
     border: 1px solid rgba(255, 255, 255, 0.12);
-
     background: rgba(255, 255, 255, 0.04);
-
     backdrop-filter: blur(12px);
 }
 
@@ -364,17 +288,13 @@
 }
 
 .primary-btn:hover {
-    box-shadow:
-        0 18px 45px rgba(124, 58, 237, 0.48);
+    box-shadow: 0 18px 45px rgba(124, 58, 237, 0.48);
 }
 
 .secondary-btn:hover {
     background: rgba(255, 255, 255, 0.08);
-
-    border-color:
-        rgba(167, 139, 250, 0.25);
+    border-color: rgba(167, 139, 250, 0.25);
 }
-
 
 /* =========================================================
    SOCIALS
@@ -382,11 +302,8 @@
 
 .hero-socials {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
     margin-top: 24px;
 }
 
@@ -395,20 +312,14 @@
     height: 42px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     border-radius: 10px;
-
     color: #94a3b8;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.08);
-
-    background:
-        rgba(255, 255, 255, 0.04);
-
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(10px);
 
     transition:
@@ -420,38 +331,27 @@
 
 .hero-socials a:hover {
     transform: translateY(-4px);
-
     color: #a78bfa;
-
-    border-color:
-        rgba(139, 92, 246, 0.5);
-
-    background:
-        rgba(139, 92, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.5);
+    background: rgba(139, 92, 246, 0.08);
 }
 
-
 /* =========================================================
-   RIGHT VISUAL
-   IMAGE SLIGHTLY UP
+   RIGHT PROFILE VISUAL
 ========================================================= */
 
 .hero-visual {
     position: relative;
-
     width: 100%;
     height: 600px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     transform: translateY(-35px);
-
     isolation: isolate;
 }
-
 
 /* =========================================================
    PROFILE GLOW
@@ -459,59 +359,41 @@
 
 .profile-glow {
     position: absolute;
-
     left: 50%;
     top: 50%;
 
     width: 450px;
     height: 450px;
 
-    transform:
-        translate(-50%, -50%);
-
+    transform: translate(-50%, -50%);
     border-radius: 50%;
 
-    background:
-        radial-gradient(
-            circle,
-            rgba(124, 58, 237, 0.50) 0%,
-            rgba(99, 102, 241, 0.25) 30%,
-            rgba(6, 182, 212, 0.12) 48%,
-            transparent 72%
-        );
+    background: radial-gradient(
+        circle,
+        rgba(124, 58, 237, 0.50) 0%,
+        rgba(99, 102, 241, 0.25) 30%,
+        rgba(6, 182, 212, 0.12) 48%,
+        transparent 72%
+    );
 
     filter: blur(42px);
-
     pointer-events: none;
-
     z-index: 0;
 
-    animation:
-        profileGlow 4s
-        ease-in-out
-        infinite;
+    animation: profileGlow 4s ease-in-out infinite;
 }
 
 @keyframes profileGlow {
-
-    0%,
-    100% {
-        transform:
-            translate(-50%, -50%)
-            scale(0.94);
-
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.94);
         opacity: 0.65;
     }
 
     50% {
-        transform:
-            translate(-50%, -50%)
-            scale(1.08);
-
+        transform: translate(-50%, -50%) scale(1.08);
         opacity: 1;
     }
 }
-
 
 /* =========================================================
    PROFILE WRAPPER
@@ -519,26 +401,36 @@
 
 .profile-wrapper {
     position: relative;
-
     z-index: 5;
 
     width: 430px;
     height: 430px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     flex-shrink: 0;
 }
 
-
 /* =========================================================
-   PROFILE RING
+   PROFILE FLOAT
 ========================================================= */
 
-.profile-ring {
+.profile-float {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================================
+   PROFESSIONAL SQUARE PROFILE FRAME
+========================================================= */
+
+.profile-frame {
     position: relative;
 
     width: 410px;
@@ -546,47 +438,38 @@
 
     padding: 7px;
 
-    border-radius: 50%;
+    border-radius: 30px;
 
-    background:
-        conic-gradient(
-            from 0deg,
-            #7c3aed,
-            #22d3ee,
-            #6366f1,
-            #a855f7,
-            #7c3aed
-        );
+    background: linear-gradient(
+        135deg,
+        #8b5cf6 0%,
+        #6366f1 35%,
+        #22d3ee 70%,
+        #8b5cf6 100%
+    );
 
     box-shadow:
-        0 0 35px rgba(124, 58, 237, 0.45),
-        0 0 90px rgba(6, 182, 212, 0.12);
+        0 0 30px rgba(124, 58, 237, 0.35),
+        0 0 70px rgba(34, 211, 238, 0.12),
+        0 25px 70px rgba(0, 0, 0, 0.45);
 
-    animation:
-        ringGlow 5s
-        ease-in-out
-        infinite;
+    transition:
+        box-shadow 0.4s ease,
+        transform 0.4s ease;
 }
 
-@keyframes ringGlow {
+.profile-frame:hover {
+    transform: translateY(-5px);
 
-    0%,
-    100% {
-        box-shadow:
-            0 0 35px rgba(124, 58, 237, 0.42),
-            0 0 90px rgba(6, 182, 212, 0.10);
-    }
-
-    50% {
-        box-shadow:
-            0 0 45px rgba(124, 58, 237, 0.60),
-            0 0 110px rgba(6, 182, 212, 0.16);
-    }
+    box-shadow:
+        0 0 40px rgba(124, 58, 237, 0.55),
+        0 0 90px rgba(34, 211, 238, 0.20),
+        0 30px 80px rgba(0, 0, 0, 0.50);
 }
-
 
 /* =========================================================
-   IMAGE CONTAINER
+   PROFILE IMAGE CLIPPING AREA
+   IMPORTANT: IMAGE WILL STAY INSIDE THIS FRAME
 ========================================================= */
 
 .profile-inner {
@@ -597,25 +480,22 @@
 
     overflow: hidden;
 
-    border-radius: 50%;
-
-    border: 7px solid #050713;
+    border-radius: 24px;
+    border: 5px solid #050713;
 
     background: #080b18;
-
     isolation: isolate;
 }
 
-
 /* =========================================================
    PROFILE IMAGE
-   SAME POSITION ON ALL DEVICES
+   IMAGE SLIDES FROM BOTTOM TO TOP INSIDE THE FRAME
 ========================================================= */
 
 .profile-image {
     position: absolute;
 
-    right: 5%;
+    left: 0;
     top: 0;
 
     width: 100%;
@@ -624,44 +504,20 @@
     display: block;
 
     object-fit: cover;
-
-    /*
-       SAME IMAGE POSITION EVERYWHERE
-
-       42% = horizontal
-       80% = vertical
-
-       Keep this same on:
-       Desktop
-       Laptop
-       Tablet
-       Mobile
-       Small Mobile
-    */
     object-position: 42% 80%;
-
-    /*
-       SAME IMAGE TRANSFORM EVERYWHERE
-    */
-    transform:
-        scale(1.07)
-        rotate(-5deg);
 
     transform-origin: center center;
 
     max-width: none;
 
-    filter:
-        contrast(1.06)
-        saturate(1.05);
+    filter: contrast(1.06) saturate(1.05);
 
     user-select: none;
-
     -webkit-user-drag: none;
-
     pointer-events: none;
-}
 
+    will-change: transform, opacity;
+}
 
 /* =========================================================
    ORBIT BASE
@@ -677,51 +533,35 @@
     height: 200px;
 
     border-radius: 50%;
-
     pointer-events: none;
-
     z-index: 3;
 
     transform-origin: center center;
 }
-
 
 /* =========================================================
    ORBIT ONE
 ========================================================= */
 
 .orbit-one {
-    border:
-        1px solid rgba(167, 139, 250, 0.48);
+    border: 1px solid rgba(167, 139, 250, 0.48);
 
-    box-shadow:
-        0 0 20px rgba(124, 58, 237, 0.15);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
 
-    transform:
-        translate(-50%, -50%)
-        rotate(-25deg);
+    transform: translate(-50%, -50%) rotate(-25deg);
 
-    animation:
-        orbitOne 18s
-        linear
-        infinite;
+    animation: orbitOne 18s linear infinite;
 }
 
 @keyframes orbitOne {
-
     from {
-        transform:
-            translate(-50%, -50%)
-            rotate(-25deg);
+        transform: translate(-50%, -50%) rotate(-25deg);
     }
 
     to {
-        transform:
-            translate(-50%, -50%)
-            rotate(335deg);
+        transform: translate(-50%, -50%) rotate(335deg);
     }
 }
-
 
 /* =========================================================
    ORBIT TWO
@@ -731,37 +571,24 @@
     width: 550px;
     height: 225px;
 
-    border:
-        1px solid rgba(34, 211, 238, 0.28);
+    border: 1px solid rgba(34, 211, 238, 0.28);
 
-    box-shadow:
-        0 0 20px rgba(34, 211, 238, 0.08);
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.08);
 
-    transform:
-        translate(-50%, -50%)
-        rotate(35deg);
+    transform: translate(-50%, -50%) rotate(35deg);
 
-    animation:
-        orbitTwo 25s
-        linear
-        infinite;
+    animation: orbitTwo 25s linear infinite;
 }
 
 @keyframes orbitTwo {
-
     from {
-        transform:
-            translate(-50%, -50%)
-            rotate(35deg);
+        transform: translate(-50%, -50%) rotate(35deg);
     }
 
     to {
-        transform:
-            translate(-50%, -50%)
-            rotate(-325deg);
+        transform: translate(-50%, -50%) rotate(-325deg);
     }
 }
-
 
 /* =========================================================
    FLOATING CARDS
@@ -769,35 +596,25 @@
 
 .floating-card {
     position: absolute;
-
     z-index: 10;
 
     display: flex;
-
     align-items: center;
-
     gap: 9px;
 
     padding: 10px 14px;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.10);
-
+    border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 10px;
 
-    background:
-        rgba(8, 11, 24, 0.76);
-
+    background: rgba(8, 11, 24, 0.76);
     backdrop-filter: blur(15px);
 
     color: #e2e8f0;
-
     font-size: 12px;
-
     font-weight: 700;
 
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 
     white-space: nowrap;
 }
@@ -812,7 +629,6 @@
     left: 0;
 }
 
-
 /* =========================================================
    DOT
 ========================================================= */
@@ -820,24 +636,18 @@
 .floating-dot {
     width: 7px;
     height: 7px;
-
     flex-shrink: 0;
 
     border-radius: 50%;
-
     background: #a78bfa;
 
-    box-shadow:
-        0 0 12px #a78bfa;
+    box-shadow: 0 0 12px #a78bfa;
 }
 
 .floating-dot.cyan {
     background: #22d3ee;
-
-    box-shadow:
-        0 0 12px #22d3ee;
+    box-shadow: 0 0 12px #22d3ee;
 }
-
 
 /* =========================================================
    SCROLL INDICATOR
@@ -852,17 +662,13 @@
     z-index: 10;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     gap: 5px;
 
     transform: translateX(-50%);
 
     color: #64748b;
-
     text-decoration: none;
 
     transition: color 0.25s ease;
@@ -874,19 +680,15 @@
 
 .scroll-indicator span {
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 3px;
 }
-
 
 /* =========================================================
    LARGE DESKTOP
 ========================================================= */
 
 @media (max-width: 1200px) {
-
     .hero-container {
         width: min(1120px, 92%);
 
@@ -898,8 +700,7 @@
     }
 
     .hero h1 {
-        font-size:
-            clamp(68px, 8vw, 105px);
+        font-size: clamp(68px, 8vw, 105px);
     }
 
     .hero-visual {
@@ -911,7 +712,7 @@
         height: 390px;
     }
 
-    .profile-ring {
+    .profile-frame {
         width: 370px;
         height: 370px;
     }
@@ -930,24 +731,13 @@
         width: 500px;
         height: 200px;
     }
-
-    /* SAME IMAGE SETTING */
-    .profile-image {
-        object-position: 42% 80%;
-
-        transform:
-            scale(1.07)
-            rotate(-5deg);
-    }
 }
-
 
 /* =========================================================
    TABLET / SMALL LAPTOP
 ========================================================= */
 
 @media (max-width: 950px) {
-
     .hero-container {
         width: 92%;
 
@@ -960,7 +750,6 @@
 
     .hero-visual {
         height: 520px;
-
         transform: translateY(-25px);
     }
 
@@ -969,15 +758,16 @@
         height: 350px;
     }
 
-    .profile-ring {
+    .profile-frame {
         width: 330px;
         height: 330px;
-
         padding: 6px;
+        border-radius: 25px;
     }
 
     .profile-inner {
-        border-width: 6px;
+        border-width: 5px;
+        border-radius: 20px;
     }
 
     .profile-glow {
@@ -995,15 +785,6 @@
         height: 180px;
     }
 
-    /* SAME IMAGE SETTING */
-    .profile-image {
-        object-position: 42% 80%;
-
-        transform:
-            scale(1.07)
-            rotate(-5deg);
-    }
-
     .floating-card-top {
         right: -5px;
         top: 75px;
@@ -1015,51 +796,39 @@
     }
 }
 
-
 /* =========================================================
    TABLET
 ========================================================= */
 
 @media (max-width: 800px) {
-
     .hero {
         min-height: auto;
     }
 
     .hero-container {
         width: min(680px, 90%);
-
         min-height: auto;
 
-        padding:
-            95px 0 80px;
+        padding: 95px 0 80px;
 
         display: flex;
-
         flex-direction: column;
-
         gap: 20px;
     }
 
     .hero-visual {
         order: 1;
-
         width: 100%;
-
         height: 400px;
         min-height: 400px;
 
-        /* WHOLE VISUAL UP */
         transform: translateY(-25px);
     }
 
     .hero-content {
         order: 2;
-
         width: 100%;
-
         max-width: 680px;
-
         text-align: center;
     }
 
@@ -1086,29 +855,20 @@
         height: 330px;
     }
 
-    .profile-ring {
+    .profile-frame {
         width: 310px;
         height: 310px;
-
         padding: 6px;
+        border-radius: 24px;
     }
 
     .profile-inner {
-        border-width: 6px;
+        border-radius: 19px;
     }
 
     .profile-glow {
         width: 330px;
         height: 330px;
-    }
-
-    /* SAME IMAGE SETTING */
-    .profile-image {
-        object-position: 42% 80%;
-
-        transform:
-            scale(1.07)
-            rotate(-5deg);
     }
 
     .profile-orbit {
@@ -1136,35 +896,27 @@
     }
 }
 
-
 /* =========================================================
    MOBILE
 ========================================================= */
 
 @media (max-width: 600px) {
-
     .hero {
         min-height: auto;
-
         overflow: hidden;
     }
 
     .hero-container {
         width: 91%;
-
-        padding:
-            85px 0 65px;
-
+        padding: 85px 0 65px;
         gap: 12px;
     }
 
     .hero-visual {
         height: 350px;
         min-height: 350px;
-
         width: 100%;
 
-        /* WHOLE VISUAL UP */
         transform: translateY(-20px);
     }
 
@@ -1173,31 +925,22 @@
         height: 290px;
     }
 
-    .profile-ring {
+    .profile-frame {
         width: 270px;
         height: 270px;
-
         padding: 5px;
+        border-radius: 22px;
     }
 
     .profile-inner {
-        border-width: 5px;
+        border-width: 4px;
+        border-radius: 17px;
     }
 
     .profile-glow {
         width: 290px;
         height: 290px;
-
         filter: blur(30px);
-    }
-
-    /* SAME IMAGE SETTING */
-    .profile-image {
-        object-position: 42% 80%;
-
-        transform:
-            scale(1.07)
-            rotate(-5deg);
     }
 
     .profile-orbit {
@@ -1211,13 +954,9 @@
     }
 
     /* FLOATING CARDS */
-
     .floating-card {
-        padding:
-            8px 10px;
-
+        padding: 8px 10px;
         font-size: 10px;
-
         border-radius: 8px;
     }
 
@@ -1232,82 +971,57 @@
     }
 
     /* BADGE */
-
     .hero-badge {
-        padding:
-            8px 11px;
-
+        padding: 8px 11px;
         font-size: 9px;
-
         letter-spacing: 1px;
     }
 
     /* GREETING */
-
     .hero-greeting {
         margin-bottom: 8px;
-
         font-size: 11px;
-
         letter-spacing: 4px;
     }
 
     /* NAME */
-
     .hero h1 {
-        font-size:
-            clamp(58px, 18vw, 82px);
-
+        font-size: clamp(58px, 18vw, 82px);
         letter-spacing: -5px;
-
         line-height: 0.9;
     }
 
     /* ROLE */
-
     .hero h2 {
         margin-top: 18px;
-
         font-size: 22px;
-
         line-height: 1.25;
     }
 
     /* DESCRIPTION */
-
     .hero-description {
         margin-top: 16px;
-
         font-size: 14px;
-
         line-height: 1.7;
     }
 
     /* BUTTONS */
-
     .hero-buttons {
         gap: 9px;
-
         margin-top: 25px;
     }
 
     .primary-btn,
     .secondary-btn {
         min-height: 46px;
-
-        padding:
-            0 17px;
-
+        padding: 0 17px;
         font-size: 12px;
-
         border-radius: 9px;
     }
 
     /* SOCIALS */
-
     .hero-socials {
         margin-top: 20px;
-
         gap: 10px;
     }
 
@@ -1317,11 +1031,9 @@
     }
 
     /* GLOWS */
-
     .hero-glow-one {
         width: 280px;
         height: 280px;
-
         right: -100px;
         top: 15%;
     }
@@ -1329,30 +1041,24 @@
     .hero-glow-two {
         width: 220px;
         height: 220px;
-
         left: -100px;
         bottom: 10%;
     }
 }
-
 
 /* =========================================================
    SMALL MOBILE
 ========================================================= */
 
 @media (max-width: 400px) {
-
     .hero-container {
         width: 92%;
-
         padding-top: 75px;
     }
 
     .hero-visual {
         height: 315px;
         min-height: 315px;
-
-        /* WHOLE VISUAL UP */
         transform: translateY(-18px);
     }
 
@@ -1361,29 +1067,21 @@
         height: 260px;
     }
 
-    .profile-ring {
+    .profile-frame {
         width: 240px;
         height: 240px;
-
         padding: 5px;
+        border-radius: 20px;
     }
 
     .profile-inner {
-        border-width: 5px;
+        border-width: 4px;
+        border-radius: 15px;
     }
 
     .profile-glow {
         width: 300px;
         height: 300px;
-    }
-
-    /* SAME IMAGE SETTING */
-    .profile-image {
-        object-position: 42% 80%;
-
-        transform:
-            scale(1.07)
-            rotate(-5deg);
     }
 
     .profile-orbit {
@@ -1407,15 +1105,12 @@
     }
 
     .floating-card {
-        padding:
-            7px 9px;
-
+        padding: 7px 9px;
         font-size: 9px;
     }
 
     .hero h1 {
         font-size: 62px;
-
         letter-spacing: -4px;
     }
 
@@ -1429,24 +1124,36 @@
 
     .primary-btn,
     .secondary-btn {
-        padding:
-            0 14px;
-
+        padding: 0 14px;
         font-size: 11px;
     }
 }
-
 
 /* =========================================================
    ACCESSIBILITY
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-
     .profile-glow,
-    .profile-ring,
     .orbit-one,
-    .orbit-two {
-        animation: none;
+    .orbit-two,
+    .floating-card,
+    .scroll-indicator {
+        animation: none !important;
+    }
+
+    .profile-wrapper,
+    .hero-content {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .profile-image {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .profile-frame {
+        transition: none;
     }
 }
